@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block content %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h4 class="display-4">{{item.task}}</h4>
+                <p class="lead">{{item.description}}</p>
+            </div>
+            </div>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col">
+        <form action="/todo" method="get"><button type="submit" class="btn btn-secondary">Return</button></form>
+    </div>
+</div>
+
+{% endblock content %}
